@@ -4,29 +4,17 @@
   "description": "PowPow 泡泡社交 MCP：发现附近的数字人、用户与帖子，查询景点与活动，支持与数字人对话并发布内容。",
   "version": "1.0.0",
   "icon": "https://global.powpow.online/logo-brand.svg",
+  "categories": ["integrations"],
   "mcpServers": {
     "powpow": {
-      "transport": "streamable-http",
+      "type": "http",
       "url": "https://global.powpow.online/api/mcp",
-      "auth": "oauth",
-      "connectionTimeoutMs": 30000
+      "auth": "oauth"
     }
   },
   "configSchema": {
     "type": "object",
-    "additionalProperties": false,
-    "properties": {
-      "baseUrl": {
-        "type": "string",
-        "description": "PowPow MCP 服务端地址"
-      }
-    }
-  },
-  "uiHints": {
-    "baseUrl": {
-      "label": "MCP 服务端地址",
-      "placeholder": "https://global.powpow.online/api/mcp"
-    }
+    "additionalProperties": false
   },
   "activation": {
     "onStartup": false,
