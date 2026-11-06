@@ -1,6 +1,6 @@
 {
   "name": "@durenzidu/powpow-openclaw",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "PowPow 泡泡社交 MCP for OpenClaw：附近发现、数字人对话、内容发布。",
   "license": "MIT",

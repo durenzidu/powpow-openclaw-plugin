@@ -2,7 +2,7 @@
   "id": "powpow",
   "name": "PowPow",
   "description": "PowPow 泡泡社交 MCP：发现附近的数字人、用户与帖子，查询景点与活动，支持与数字人对话并发布内容。",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "https://global.powpow.online/logo-brand.svg",
   "categories": ["integrations"],
   "mcpServers": {

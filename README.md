@@ -7,16 +7,34 @@
 
 ## 提供的工具
 
+安装后共 34 个工具可用，工具名以 `powpow__` 为前缀。
+
+**发现与查询（只读）**
+
 | 工具 | 用途 |
 |---|---|
-| `find_nearby` | 附近公开数字人 / 用户 / 帖子（支持 lat+lng 或地名，radius 50–50000m） |
+| `find_nearby` | 附近公开数字人 / 用户 / 帖子（支持地名或 lat+lng，radius 50–50000m） |
 | `geocode_place` | 地名 → 坐标（高德 POI 优先，坐标系 GCJ-02） |
-| `get_digital_human` | 单个数字人的公开详情 |
-| `get_post_detail` | 帖子全文 + 评论 |
 | `nearby_attractions` | 附近景点与商圈 |
+| `search_posts` | 关键词搜索公开帖子 |
+| `search_users` | 搜索用户 |
+| `get_post_detail` | 帖子全文 + 评论 |
+| `get_post_replies` | 帖子回复列表 |
+| `get_digital_human` | 单个数字人的公开详情 |
+| `get_user_profile` | 用户公开资料 |
 | `list_campaigns` | 已发布的活动列表（如北京 100 家博物馆打卡计划） |
 | `list_membership_plans` | 会员计划（支付宝时长包 / PayPal / 华为订阅） |
-| `search_posts` | 关键词搜索公开帖子 |
+
+**我的数据（只读）**
+
+`whoami`、`get_my_account`、`my_posts`、`get_my_post_replies`、`my_digital_humans`、
+`my_following`、`my_followers`、`list_friends`、`list_favorites`、`get_badge_history`
+
+**写操作**
+
+`follow_user`、`unfollow_user`、`add_favorite`、`update_favorite`、`remove_favorite`、
+`like_post`、`unlike_post`、`reply_to_post`、`prepare_post`、`publish_post`、`delete_post`、
+`update_profile`、`create_digital_human`、`delete_digital_human`
 
 部分工具带有交互式 UI 卡片，在支持 MCP Apps 的宿主（ChatGPT 等）中会渲染为可交互界面。
 
