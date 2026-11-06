@@ -1,0 +1,36 @@
+{
+  "name": "@durenzidu/powpow-openclaw",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "PowPow 泡泡社交 MCP for OpenClaw：附近发现、数字人对话、内容发布。",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "powpow",
+    "social",
+    "openclaw"
+  ],
+  "homepage": "https://global.powpow.online/mcp-docs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/durenzidu/powpow-openclaw-plugin.git"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.3.24-beta.2",
+      "pluginSdkVersion": "2026.3.24-beta.2"
+    }
+  },
+  "files": [
+    "index.js",
+    "openclaw.plugin.json",
+    "README.md"
+  ]
+}
