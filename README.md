@@ -36,16 +36,19 @@ openclaw mcp login powpow
 
 ## 配置
 
-默认连接 `https://global.powpow.online/api/mcp`。如需指向自建部署，可覆盖：
+插件默认连接 `https://global.powpow.online/api/mcp`（Streamable HTTP + OAuth）。
+
+如需指向自建部署，在 OpenClaw 配置里覆盖同名 MCP 服务器即可
+（`mcp.servers` 中的同名条目优先级高于插件默认值）：
 
 ```json
 {
-  "plugins": {
-    "entries": {
+  "mcp": {
+    "servers": {
       "powpow": {
-        "config": {
-          "baseUrl": "https://your-host/api/mcp"
-        }
+        "url": "https://your-host/api/mcp",
+        "transport": "streamable-http",
+        "auth": "oauth"
       }
     }
   }
